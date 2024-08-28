@@ -31,18 +31,41 @@ body{
   width: 100%;
   gap: 128px;
   margin-bottom: 256px;
+  position: relative;
 }
 
 .header{
-  background-image: 
-    url(../images/header-background-top.png),
-    url(../images/header-background.png) 
-  ;
-  background-position: top -20px left ,center;
-  background-size: 130px 130px, cover;
-  background-repeat: no-repeat ,repeat;
   height: fit-content;
   position: relative;
+  width: 100%;
+  gap: 144px;
+  margin-bottom: 400px;
+  z-index: 10;
+}
+
+.header::before{
+  content: ' ';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  background-image: 
+    url(../images/header-background.png) 
+  ;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.header-spiral-image{
+  position: absolute;
+  top: -20px;
+  left: 0px;
+  height: 130px;
+  width: 130px;
 }
 
 .header__navbar{
@@ -1726,21 +1749,42 @@ body{
     width: 100%;
     gap: 128px;
     margin-bottom: 0px;
+    z-index: 10;
+    position: relative;
   }
   
   .header{
-    background-image: 
-      url(../images/header-background-top.png),
-      url(../images/header-background-desktop.png) 
-    ;
-    background-position: left 56px top -20px ,center;
-    background-size: 300px 250px,cover;
-    background-repeat: no-repeat , no-repeat;
     height: fit-content;
     position: relative;
     width: 100%;
     gap: 144px;
     margin-bottom: 400px;
+    z-index: 10;
+  }
+
+  .header::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    background-image: 
+      url(../images/header-background-desktop.png) 
+    ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  .header-spiral-image{
+    position: absolute;
+    top: -20px;
+    left: 56px;
+    height: 250px;
+    width: 300px;
   }
   
   .header__navbar{
@@ -1858,7 +1902,7 @@ body{
   .crypto-vault{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
@@ -1872,7 +1916,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     gap: 24px;
     margin-left: 0px;
   }
@@ -1881,7 +1925,7 @@ body{
     font-size: 36px;
     font-weight: 700;
     line-height: 36px;
-    text-align: center;  
+    text-align: start;  
     color: #ffffff;
     margin: 0;
   }
@@ -1890,7 +1934,7 @@ body{
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
-    text-align: center;  
+    text-align: start;  
     color: #CFCFCF;
     margin: 0;
   }
@@ -2410,7 +2454,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px;
+    gap: 16px;
     width: 100%;
   }
 
@@ -2437,6 +2481,10 @@ body{
     text-align: left;  
     margin: 0px;
     color: #ffffff;
+  }
+
+  .packages .button--purple{
+    width: 100% !important;
   }
 
   .icon-check{
