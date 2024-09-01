@@ -19,6 +19,7 @@ body{
   background-color: #010101 !important;
 }
 /* header section */
+
 .bg__gradient{
   background-image: linear-gradient(to bottom , #01010100, #010101);
   height: fit-content;
@@ -31,6 +32,7 @@ body{
   width: 100%;
   gap: 128px;
   margin-bottom: 256px;
+  z-index: 10;
   position: relative;
 }
 
@@ -54,9 +56,9 @@ body{
   background-image: 
     url(../images/header-background.png) 
   ;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-repeat: repeat;
   z-index: 1;
 }
 
@@ -221,11 +223,11 @@ body{
 .purple-shadow--left{
   background-color: #A58FFE;
   height: 45px;
-  width: 300px;
-  filter: blur(70px);
+  width: 200px;
+  filter: blur(80px);
   transform: rotate(45deg);
   position: absolute;
-  left: -24px;
+  left: 0px;
   top: 150px;
   z-index: 0;
 }
@@ -233,11 +235,11 @@ body{
 .purple-shadow--right{
   background-color: #A58FFE;
   height: 45px;
-  width: 300px;
-  filter: blur(70px);
+  width: 200px;
+  filter: blur(80px);
   transform: rotate(-45deg);
   position: absolute;
-  right: -24px;
+  right: 0px;
   top: 150px;
   z-index: 0;
 }
@@ -246,10 +248,6 @@ body{
 .features{
   background-color: #010101;
   height: fit-content;
-  background-image: url(../images/round-purple-background.svg);
-  background-position: top left -124px;
-  background-size: 700px 700px;
-  background-repeat: no-repeat;
   padding: 0px 24px;
   margin-bottom: 205px;
 }
@@ -261,6 +259,17 @@ body{
   align-items: center;
   width: 100%;
   gap: 40px;
+}
+
+.features .purple-shadow{
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 120px;
+  left: -144px;
+  background-color: #A58FFE;
+  filter: blur(250px);
+  z-index: 0;
 }
 
 .section__heading{
@@ -296,6 +305,7 @@ body{
   align-items: center;
   width: 100%;
   gap: 24px;
+  position: relative;
 }
 
 .info{
@@ -388,6 +398,10 @@ body{
   align-items: center;
   height: 100%;
   gap: 16px;
+}
+
+.creator:last-child, .gains:last-child, .testimony:last-child{
+  margin-right: 16px;
 }
 
 .creator__image{
@@ -624,7 +638,7 @@ body{
 }
 
 .packages{
-  height: 800px;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -697,7 +711,7 @@ body{
   background-color: #FFFFFF;
 }
 
-.white-line{
+.grey-line{
   width: 100%;
   height: 1px;
   background-color: #404040;
@@ -836,6 +850,39 @@ body{
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  position: relative;
+  height: fit-content;
+  z-index: 10;
+  padding: 0px;
+}
+
+.footer::before{
+  content: ' ';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  opacity: 0.4;
+  padding: 0px;
+  background-image: url(../images/header-background.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: top;
+  z-index: 1;
+}
+
+.footer-gradient{
+  background-image: linear-gradient(to bottom , #01010100, #010101);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  z-index: 10;
+  position: relative;
+  z-index: 10;
   padding: 26px 24px;
 }
 
@@ -886,19 +933,33 @@ body{
     align-items: center;
     width: 100%;
     gap: 128px;
-    margin-bottom: 256px;
+    z-index: 10;
+    position: relative;
   }
-
+    
   .header{
-    background-image: 
-      url(../images/header-background-top.png),
-      url(../images/header-background.png) 
-    ;
-    background-position: top -20px left ,center;
-    background-size: 130px 130px, cover;
-    background-repeat: no-repeat ,repeat;
     height: fit-content;
     position: relative;
+    width: 100%;
+    margin-bottom: 400px;
+    z-index: 10;
+  }
+
+  .header::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+    background-image: 
+      url(../images/header-background.png) 
+    ;
+    background-position: top;
+    background-size: contain;
+    background-repeat: repeat;
+    z-index: 1;
   }
 
   .header__navbar{
@@ -1049,16 +1110,17 @@ body{
 
   .crypto-vault .button--purple{
     margin-top: 0px;
+    width: 280px;
   }
 
   .purple-shadow--left{
     background-color: #A58FFE;
     height: 45px;
-    width: 300px;
-    filter: blur(70px);
+    width: 60%;
+    filter: blur(80px);
     transform: rotate(45deg);
     position: absolute;
-    left: -24px;
+    left: 0px;
     top: 150px;
     z-index: 0;
   }
@@ -1066,11 +1128,11 @@ body{
   .purple-shadow--right{
     background-color: #A58FFE;
     height: 45px;
-    width: 300px;
-    filter: blur(70px);
+    width: 60%;
+    filter: blur(80px);
     transform: rotate(-45deg);
     position: absolute;
-    right: -24px;
+    right: 0px;
     top: 150px;
     z-index: 0;
   }
@@ -1079,10 +1141,6 @@ body{
   .features{
     background-color: #010101;
     height: fit-content;
-    background-image: url(../images/round-purple-background.svg);
-    background-position: top left -124px;
-    background-size: 700px 700px;
-    background-repeat: no-repeat;
     padding: 0px 72px;
     margin-bottom: 205px;
   }
@@ -1130,6 +1188,7 @@ body{
     align-items: center;
     width: 100%;
     gap: 2%;
+    position: relative;
   }
 
   .info{
@@ -1669,7 +1728,54 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 26px 24px;
+    position: relative;
+    height: fit-content;
+    z-index: 10;
+    padding: 0px;
+  }
+
+  .footer::before{
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.4;
+    padding: 0px;
+    background-image: url(../images/header-background-desktop.png);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: top;
+    z-index: 1;
+  }
+
+  .footer-gradient{
+    background-image: linear-gradient(to bottom , #01010100, #010101);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    z-index: 10;
+    padding: 26px 72px;
+  }
+
+    
+  .footer-gradient{
+    background-image: linear-gradient(to bottom , #01010100, #010101);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
   }
 
   .footer__copyright{
@@ -1707,36 +1813,9 @@ body{
   }
 }
 
-@media only screen and (min-width: 1220px){
-  .navbar__links{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 24px;
-    align-items: center;
-  }
-
-  .navbar__hamburger{
-    display: none;
-  }
-
-  .header__navbar .button--purple{
-    margin: 0px;
-    width: 151px;
-    height: 100%;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 20px;
-    text-align: center;   
-    padding: 12px 20px; 
-    display: block !important;
-  }
-}
-
 @media only screen and (min-width: 851px){
 
   /* header section */
-
   .bg__gradient{
     background-image: linear-gradient(to bottom , #01010100, #010101);
     height: fit-content;
@@ -1774,8 +1853,8 @@ body{
       url(../images/header-background-desktop.png) 
     ;
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: repeat;
     z-index: 1;
   }
 
@@ -1825,7 +1904,7 @@ body{
   }
 
   .link:hover{
-    color: #A58FFE;
+    color: #ffffff;
   }
   
   .header-welcome{
@@ -1902,10 +1981,10 @@ body{
   .crypto-vault{
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 80px;
+    gap: 60px;
   }
   
   .vault-image{
@@ -1917,7 +1996,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 24px;
     margin-left: 0px;
   }
@@ -1926,7 +2005,7 @@ body{
     font-size: 36px;
     font-weight: 700;
     line-height: 36px;
-    text-align: start;  
+    text-align: center;  
     color: #ffffff;
     margin: 0;
   }
@@ -1935,7 +2014,7 @@ body{
     font-size: 24px;
     font-weight: 400;
     line-height: 36px;
-    text-align: start;  
+    text-align: center;  
     color: #CFCFCF;
     margin: 0;
   }
@@ -1946,25 +2025,25 @@ body{
 
   .purple-shadow--left{
     background-color: #A58FFE;
-    height: 100px;
+    height: 80px;
     width: 60%;
-    filter: blur(200px);
+    filter: blur(150px);
     transform: rotate(30deg);
     position: absolute;
-    left: -24px;
-    top: 120px;
+    left: 0px;
+    top: 250px;
     z-index: 0;
   }
   
   .purple-shadow--right{
     background-color: #A58FFE;
-    height: 100px;
+    height: 80px;
     width: 60%;
-    filter: blur(200px);
+    filter: blur(150px);
     transform: rotate(-30deg);
     position: absolute;
-    right: -24px;
-    top: 120px;
+    right: 0px;
+    top: 250px;
     z-index: 0;
   }
 
@@ -1972,12 +2051,9 @@ body{
   .features{
     background-color: #010101;
     height: fit-content;
-    background-image: url(../images/round-purple-background.svg);
-    background-position: top 120px left -124px;
-    background-size: 700px 700px;
-    background-repeat: no-repeat;
     padding: 0px 144px;
     margin-bottom: 400px;
+    position: relative;
   }
 
   .feature{
@@ -1987,6 +2063,17 @@ body{
     align-items: center;
     width: 100%;
     gap: 56px;
+  }
+
+  .features .purple-shadow{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 120px;
+    left: -144px;
+    background-color: #A58FFE;
+    filter: blur(250px);
+    z-index: 0;
   }
 
   .section__heading{
@@ -2023,6 +2110,7 @@ body{
     align-items: center;
     width: 100%;
     gap: 2%;
+    position: relative;
   }
 
   .info{
@@ -2092,6 +2180,8 @@ body{
     gap: 24px;
     overflow-y: hidden;
     overflow-x: auto;
+    user-select: none;
+    cursor: pointer;
   }
 
   .creators__info::-webkit-scrollbar{
@@ -2115,6 +2205,11 @@ body{
     align-items: center;
     height: 100%;
     gap: 16px;
+    user-select: none;
+  }
+
+  .creator:last-child, .gains:last-child, .testimony:last-child{
+    margin-right: 24px;
   }
 
   .creator__image{
@@ -2435,7 +2530,7 @@ body{
     font-size: 18px;
     font-weight: 500;
     line-height: 18px;
-    text-align: left;  
+    text-align: center;  
     margin: 0px;
     text-transform: capitalize;
   }
@@ -2486,6 +2581,10 @@ body{
 
   .packages .button--purple{
     width: 100% !important;
+  }
+
+  .alpha-package .button--purple{
+    width: 280px !important;
   }
 
   .icon-check{
@@ -2580,6 +2679,38 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: relative;
+    height: fit-content;
+    z-index: 10;
+    padding: 0px;
+  }
+  
+  .footer::before{
+    content: ' ';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.4;
+    background-image: url(../images/header-background-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    z-index: 1;
+    padding: 0px;
+  }
+  
+  .footer-gradient{
+    background-image: linear-gradient(to bottom , #01010100, #010101);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    z-index: 10;
     padding: 58px 144px;
   }
 
@@ -2617,4 +2748,67 @@ body{
     width: 24px;
   }
 
+}
+
+
+@media only screen and (min-width: 1220px){
+  .navbar__links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+  }
+
+  .navbar__hamburger{
+    display: none;
+  }
+
+  .header__navbar .button--purple{
+    margin: 0px;
+    width: 151px;
+    height: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;   
+    padding: 12px 20px; 
+    display: block !important;
+  }
+    
+  .crypto-vault{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .vault-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 24px;
+    margin-left: 0px;
+  }
+
+  .vault-text-bold{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: start;  
+    color: #ffffff;
+    margin: 0;
+  }
+  
+  .vault-text{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: start;  
+    color: #CFCFCF;
+    margin: 0;
+  }
 }
