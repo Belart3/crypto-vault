@@ -624,6 +624,7 @@ body{
   align-items: center;
   gap: 40px;
   margin-bottom: 256px;
+  position: relative;
 }
 
 .packages-ctn{
@@ -750,6 +751,8 @@ body{
   margin: 0px;
   color: #ffffff;
 }
+
+
 
 .icon-check{
 }
@@ -1504,6 +1507,18 @@ body{
     align-items: center;
     gap: 40px;
     margin-bottom: 256px;
+    position: relative;
+  }
+
+  .our-packages .purple-shadow{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    background-color: #A58FFE;
+    filter: blur(250px);
+    z-index: 0;
   }
 
   .packages-ctn{
@@ -2431,6 +2446,18 @@ body{
     align-items: center;
     gap: 40px;
     margin-bottom: 400px;
+    position: relative;
+  }
+
+  .our-packages .purple-shadow{
+    height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    background-color: #A58FFE;
+    filter: blur(250px);
+    z-index: 0;
   }
 
   .packages-ctn{
@@ -2457,7 +2484,7 @@ body{
     border-radius: 16px;
     gap: 24px;
     background-color: transparent;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
 
   .alpha-package{
@@ -2542,7 +2569,8 @@ body{
   }
 
   .grey-line{
-    display: none;
+    display: block;
+    margin: 40px 0px;
   }
 
   .bundle__details-ctn{
