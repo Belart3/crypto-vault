@@ -432,6 +432,7 @@ body{
   border: 1px solid #404040;
   height: 330px;
   width: 100%;
+  z-index: 1;
 }
 
 .info__image{
@@ -1412,6 +1413,7 @@ body{
     height: 330px;
     width: 49% !important;
     margin-bottom: 20px;
+    z-index: 1;
   }
 
   .info__image{
