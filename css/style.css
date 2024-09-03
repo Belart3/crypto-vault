@@ -2361,7 +2361,7 @@ body{
     height: 600px;
     width: 600px;
     position: absolute;
-    top: 0px;
+    top: 10%;
     left: -144px;
     background-color: #A58FFE;
     filter: blur(300px);
