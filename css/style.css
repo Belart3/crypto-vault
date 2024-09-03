@@ -2156,7 +2156,7 @@ body{
     gap: 15px;
     padding: 24px;
     z-index: 99;
-    max-width: 1200px;
+    max-width: 1500px;
   }
 
   .header__navbar{
@@ -2377,7 +2377,7 @@ body{
   }
 
   .section{
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
   }
   
