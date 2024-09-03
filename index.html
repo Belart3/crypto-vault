@@ -15,31 +15,56 @@
     <header>
         <div class="header">
             <div class="bg__gradient">
-                <div class="header__navbar">
-                    <a href=""><div class="navbar__logo"></div></a>
-                    <div class="navbar__links">
-                        <a href="" class="link">
-                            features
-                        </a>
-                        <a href="" class="link">
-                            creators
-                        </a>
-                        <a href="" class="link">
-                            community gainers
-                        </a>
-                        <a href="" class="link">
-                            testimonials
-                        </a>
-                        <a href="" class="link">
-                            packages
-                        </a>
+                <div class="nav-ctn">
+                    <div class="header__navbar">
+                        <a href=""><div class="navbar__logo"></div></a>
+                        <div class="navbar__links">
+                            <a href="#features" class="link">
+                                features
+                            </a>
+                            <a href="#creators" class="link">
+                                creators
+                            </a>
+                            <a href="#community-gainers" class="link">
+                                community gainers
+                            </a>
+                            <a href="#testimonials" class="link">
+                                testimonials
+                            </a>
+                            <a href="#packages" class="link">
+                                packages
+                            </a>
+                        </div>
+                        <button class="button--purple">
+                            join now
+                            <span><img src="images/arrow-right.svg" alt=""></span>
+                        </button>
+                        <div class="navbar__hamburger">
+                            <div id="button">
+                                <div id="icon">
+                                  <span class="lines"></span>
+                                </div>
+                              </div>
+                        </div>
                     </div>
-                    <button class="button--purple">
-                        join now
-                        <span><img src="images/arrow-right.svg" alt=""></span>
-                    </button>
-                    <div class="navbar__hamburger">
-                        <img src="images/hamburger.svg" alt="">
+                    <div class="mobile-nav d-off">
+                        <ul class="mobile-nav__links">
+                            <li class="links">
+                                <a href="#features">features</a>
+                            </li>
+                            <li class="links">
+                                <a href="#creators">creators</a>
+                            </li>
+                            <li class="links">
+                                <a href="#community-gainers">community gainers</a>
+                            </li>
+                            <li class="links">
+                                <a href="#testimonials">testimonials</a>
+                            </li>
+                            <li class="links">
+                                <a href="#packages">packages</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="header-welcome">
@@ -91,7 +116,7 @@
     </header>
 
     <section>
-        <div class="features">
+        <div class="features" id="features">
             <div class="feature">
                 <div class="section__heading">
                     <p class="heading__text--big">
@@ -104,7 +129,6 @@
                     </p>
                 </div>
                 <div class="feature__info">
-                    <div class="purple-shadow"></div>
                     <div class="info">
                         <div class="info__image">
                             <img src="images/exclusive-trades.png" alt="">
@@ -197,11 +221,13 @@
                     </div>
                 </div>
             </div>
+            <div class="purple-shadow"></div>
+            <div class="purple-shadow-mobile"></div>
         </div>
     </section>
 
     <section>
-        <div class="creators">
+        <div class="creators" id="creators">
             <div class="section__heading">
                 <p class="heading__text--big">
                     Meet Our Creators
@@ -327,11 +353,12 @@
                     </div>
                 </div>
             </div>
+            <div class="purple-shadow"></div>
         </div>
     </section>
 
     <section>
-        <div class="community-gainers">
+        <div class="community-gainers" id="community-gainers">
             <div class="section__heading">
                 <p class="heading__text--big">
                     community gainers
@@ -355,7 +382,7 @@
     </section>
 
     <section>
-        <div class="testimonials">
+        <div class="testimonials" id="testimonials">
             <div class="section__heading">
                 <p class="heading__text--big">
                     testimonials
@@ -476,11 +503,12 @@
                     </div>
                 </div>
             </div>
+            <div class="purple-shadow"></div>
         </div>
     </section>
 
     <section>
-        <div class="our-packages">
+        <div class="our-packages" id="packages">
             <div class="section__heading">
                 <p class="heading__text--big">
                     our packages
@@ -889,11 +917,12 @@
                 </div>
             </div>
             <div class="purple-shadow"></div>
+            <div class="purple-shadow-mobile"></div>
         </div>
     </section>
 
     <section>
-        <div class="FAQ">
+        <div class="FAQ" id="FAQ">
             <div class="section__heading">
                 <p class="heading__text--big">
                     frequently asked questions

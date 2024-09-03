@@ -25,3 +25,19 @@ creator_slide.addEventListener("mousedown", dragStart);
 
 creator_slide.addEventListener("mouseUp", dragStop);
 
+
+let menu = document.querySelector(".navbar__hamburger")
+let navDrop = document.querySelector(".mobile-nav")
+
+const toggleMenu = () => {
+    navDrop.classList.toggle("d-off")
+}
+
+menu.addEventListener("click", toggleMenu)
+
+const button = document.getElementById('button');
+const icon =  document.getElementById('icon');
+
+button.onclick = () => icon.classList.toggle('close');
+
+
