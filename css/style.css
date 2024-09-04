@@ -279,9 +279,51 @@ body{
   background-color: #A58FFE;
   width: 100%;
   outline: 0;
-  border: #A58FFE solid 1px;
+  border: 0;
   color: #ffffff;
   text-transform: capitalize;
+  transition: all ease .2s;
+}
+
+.button--purple:hover{
+  background-color: #7b6bbe;
+}
+
+.button--purple:hover .arrow-right{
+  animation-name: move-right;
+  animation-delay: 0s;
+  animation-duration: 600ms;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes move-right {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
+  100% {
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px);
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
+}
+
+@keyframes move-right {
+  0% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
+  100% {
+    -webkit-transform: translateX(4px);
+            transform: translateX(4px);
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
 }
 
 .button--transparent{
@@ -293,6 +335,56 @@ body{
   border: #A58FFE solid 1px;
   color: #ffffff;
   text-transform: capitalize;
+  transition: all ease .2s;
+}
+
+.button--transparent a{
+  color: #ffffff;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all ease .2s;
+}
+
+.button--transparent:hover a{
+  color: #A58FFE;
+}
+
+.button--transparent:hover  .arrow-down{
+  animation-name: move-down;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-duration: 600ms;
+  fill: #A58FFE !important;
+}
+
+@-webkit-keyframes move-down {
+  0% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
+}
+
+@keyframes move-down {
+  0% {
+    -webkit-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+  }
 }
 
 .vault-ctn{
@@ -1271,9 +1363,51 @@ body{
     background-color: #A58FFE;
     width: 100%;
     outline: 0;
-    border: #A58FFE solid 1px;
+    border: 0;
     color: #ffffff;
     text-transform: capitalize;
+    transition: all ease .2s;
+  }
+  
+  .button--purple:hover{
+    background-color: #7b6bbe;
+  }
+  
+  .button--purple:hover .arrow-right{
+    animation-name: move-right;
+    animation-delay: 0s;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+  }
+  
+  @-webkit-keyframes move-right {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+    100% {
+      -webkit-transform: translateX(4px);
+              transform: translateX(4px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+  }
+  
+  @keyframes move-right {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+    100% {
+      -webkit-transform: translateX(4px);
+              transform: translateX(4px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
   }
 
   .button--transparent{
@@ -1285,6 +1419,60 @@ body{
     border: #A58FFE solid 1px;
     color: #ffffff;
     text-transform: capitalize;
+    transition: all ease .2s;
+  }
+  
+  .button--transparent a{
+    color: #ffffff;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all ease .2s;
+  }
+  
+  .button--transparent:hover a{
+    color: #A58FFE;
+  }
+  
+  .button--transparent:hover .arrow-down{
+    fill: #A58FFE;
+  }
+
+  .button--transparent:hover  .arrow-down{
+    animation-name: move-down;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-duration: 600ms;
+    fill: #A58FFE !important;
+  }
+  
+  @-webkit-keyframes move-down {
+    0% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+  }
+  
+  @keyframes move-down {
+    0% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
   }
 
   .vault-ctn{
@@ -2265,7 +2453,7 @@ body{
     width: 177px;
     height: 56px;
     outline: 0;
-    border: #A58FFE solid 1px;
+    border: 0;
     color: #ffffff;
     text-transform: capitalize;
     margin: 0px;
@@ -2273,6 +2461,48 @@ body{
     font-weight: 700;
     line-height: 20px;
     text-align: center;
+    transition: all ease .2s;
+  }
+  
+  .button--purple:hover{
+    background-color: #7b6bbe;
+  }
+  
+  .button--purple:hover .arrow-right{
+    animation-name: move-right;
+    animation-delay: 0s;
+    animation-duration: 600ms;
+    animation-iteration-count: infinite;
+  }
+  
+  @-webkit-keyframes move-right {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+    100% {
+      -webkit-transform: translateX(4px);
+              transform: translateX(4px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+  }
+  
+  @keyframes move-right {
+    0% {
+      -webkit-transform: translateX(0px);
+              transform: translateX(0px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+    100% {
+      -webkit-transform: translateX(4px);
+              transform: translateX(4px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
   }
   
   .button--transparent{
@@ -2283,8 +2513,61 @@ body{
     height: 56px;
     outline: 0;
     border: #A58FFE solid 1px;
+    transition: all ease .2s;
+  }
+  
+  .button--transparent a{
     color: #ffffff;
     text-transform: capitalize;
+    text-decoration: none;
+    transition: all ease .2s;
+  }
+  
+  .button--transparent:hover a{
+    color: #A58FFE;
+  }
+
+  .arrow-down{
+    position: relative;
+    transition: all ease .2s;
+  }
+  
+  .button--transparent:hover  .arrow-down{
+    animation-name: move-down;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-duration: 600ms;
+    fill: #A58FFE !important;
+  }
+  
+  @-webkit-keyframes move-down {
+    0% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+  }
+  
+  @keyframes move-down {
+    0% {
+      -webkit-transform: translateY(-4px);
+              transform: translateY(-4px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+      -webkit-animation-timing-function: ease;
+              animation-timing-function: ease;
+    }
   }
 
   .vault-ctn{
