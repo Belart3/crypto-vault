@@ -625,6 +625,7 @@ body{
 
 .creators__info::-webkit-scrollbar-track{
   background: #010101;
+  margin: 0px 16px;
 }
 .creators__info::-webkit-scrollbar-thumb{
   background:  #A58FFE;
@@ -988,7 +989,7 @@ body{
   font-size: 18px;
   font-weight: 500;
   line-height: 18px;
-  text-align: left;  
+  text-align: center;  
   margin: 0px;
   text-transform: capitalize;
 }
@@ -2062,7 +2063,7 @@ body{
     font-size: 18px;
     font-weight: 500;
     line-height: 18px;
-    text-align: left;  
+    text-align: center;  
     margin: 0px;
     text-transform: capitalize;
   }
