@@ -3107,11 +3107,11 @@ body{
 
   .packages-ctn{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
-    gap: 2%;
+    gap: 40px;
     height: fit-content;
     position: relative;
     width: 100%;
@@ -3122,7 +3122,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     padding: 40px 24px;
     border: 1px solid #404040;
@@ -3254,11 +3254,11 @@ body{
   }
 
   .packages .button--purple{
-    width: 100% !important;
+    width: 177px !important;
   }
 
   .alpha-package .button--purple{
-    width: 280px !important;
+    width: 177px !important;
   }
 
   .icon-check{
@@ -3496,6 +3496,18 @@ body{
     left: -20px;
     height: 250px;
     width: 300px;
+  }  
+  
+  .packages-ctn{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2%;
+    height: fit-content;
+    position: relative;
+    width: 100%;
   }
 
   .packages{
