@@ -22,12 +22,13 @@ body{
 
 .bg__gradient{
   background-image: linear-gradient(to bottom , #01010100, #010101);
-  height: fit-content;
+  height: 100vh;
+  min-height: 650px;
   width: 100%;
   padding: 0px 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   gap: 128px;
@@ -38,6 +39,7 @@ body{
 
 .header{
   height: fit-content;
+  min-height: none;
   position: relative;
   width: 100%;
   gap: 144px;
@@ -232,7 +234,6 @@ body{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-top: 250px;
 }
 
 .header__navbar .button--purple{
@@ -436,28 +437,25 @@ body{
   margin-top: 0px;
 }
 
-.purple-shadow--left{
+.purple-shadow--left , .purple-shadow--right{
   background-color: #A58FFE;
   height: 29px;
-  width: 200px;
+  width: 100%;
   filter: blur(85px);
-  transform: rotate(55deg);
   position: absolute;
-  left: 0px;
-  top: 150px;
+  top: 30%;
   z-index: 0;
 }
 
+.purple-shadow--left{
+  transform: rotate(55.82deg);
+  left: 0%;
+}
+
 .purple-shadow--right{
-  background-color: #A58FFE;
-  height: 29px;
-  width: 200px;
-  filter: blur(85px);
-  transform: rotate(-55deg);
-  position: absolute;
-  right: 0px;
-  top: 150px;
-  z-index: 0;
+  transform: rotate(-55.82deg);
+  right: 0%;
+  flex-shrink: 0;
 }
 
 /* features section */
@@ -1233,6 +1231,7 @@ body{
     
   .header{
     height: fit-content;
+    min-height: none;
     position: relative;
     width: 100%;
     margin-bottom: 200px;
@@ -1327,7 +1326,6 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    margin-top: 250px;
   }
 
   .header__navbar .button--purple{
@@ -2299,23 +2297,26 @@ body{
     padding: 0px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     gap: 128px;
     margin-bottom: 0px;
     z-index: 10;
     position: relative;
+    max-width: 1140px;
+    margin: 0 auto;
   }
   
   .header{
     height: 100vh;
-    min-height: 850px;
+    min-height: 550px;
     position: relative;
     width: 100%;
     gap: 144px;
     margin-bottom: 0px;
     z-index: 10;
+    margin-bottom: 200px;
   }
 
   .header::before{
@@ -2337,10 +2338,10 @@ body{
 
   .header-spiral-image{
     position: absolute;
-    top: -300px;
-    left: 56px;
+    top: -71px;
+    left: -56px;
     height: 298px;
-    width: 350px;
+    width: 298px;
   }
     
   .nav-ctn{
@@ -2421,7 +2422,6 @@ body{
     width: 100%;
     max-width: 1140px;
     position: relative;
-    margin-top: 291px;
   }
   
   .header__navbar .button--purple{
@@ -2931,7 +2931,7 @@ body{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    height: 400px;
+    height: 412px;
     align-self: flex-end;
     width: 100%;
     gap: 24px;
@@ -2942,7 +2942,7 @@ body{
 
   .gains{
     height: 100%;
-    flex: 1 0 700px;
+    flex: 1 0 712px;
   }
 
   .gain-ctn::-webkit-scrollbar{
@@ -3492,10 +3492,10 @@ body{
 
   .header-spiral-image{
     position: absolute;
-    top: -300px;
-    left: -20px;
-    height: 250px;
-    width: 300px;
+    top: -71px;
+    left: -56px;
+    height: 298px;
+    width: 298px;
   }  
   
   .packages-ctn{
