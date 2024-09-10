@@ -1254,6 +1254,14 @@ body{
     background-repeat: repeat;
     z-index: 1;
   }
+  
+  .header-spiral-image{
+    position: absolute;
+    top: -31px;
+    left: 56px;
+    height: 200px;
+    width: 200px;
+  }
 
   .nav-ctn{
     display: flex;
@@ -2318,10 +2326,10 @@ body{
 
   .header-spiral-image{
     position: absolute;
-    top: -71px;
-    left: -56px;
-    height: 298px;
-    width: 298px;
+    top: -31px;
+    left: 56px;
+    height: 200px;
+    width: 200px;
   }
     
   .nav-ctn{
@@ -3496,10 +3504,10 @@ body{
 
   .header-spiral-image{
     position: absolute;
-    top: -71px;
-    left: -56px;
-    height: 298px;
-    width: 298px;
+    top: -51px;
+    left: -36px;
+    height: 200px;
+    width: 200px;
   }  
   
   .packages-ctn{
