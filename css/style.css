@@ -2296,7 +2296,7 @@ body{
     gap: 144px;
     margin-bottom: 0px;
     z-index: 10;
-    margin-bottom: 150px;
+    margin-bottom: 104px;
   }
 
   .header::before{
@@ -3074,6 +3074,8 @@ body{
     margin: 0 auto;
     left: 144px;
     overflow: hidden;
+    max-width: 1140px;
+    margin: 0 auto;
   }
 
   .fixed-shadow::before{
