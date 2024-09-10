@@ -3083,6 +3083,11 @@ body{
     text-transform: capitalize;
   }
 
+  .creators , .testimonials, .community-gainers::before , 
+  .creators , .testimonials, .community-gainers::before{
+    
+  }
+
   /* packages section */
 
   .our-packages{
