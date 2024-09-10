@@ -2316,7 +2316,7 @@ body{
     gap: 144px;
     margin-bottom: 0px;
     z-index: 10;
-    margin-bottom: 200px;
+    margin-bottom: 256px;
   }
 
   .header::before{
@@ -2585,7 +2585,7 @@ body{
 
   .vault-ctn{
     padding: 0px 144px;
-    margin-bottom: 400px;
+    margin-bottom: 256px;
   }
   
   .crypto-vault{
@@ -2594,8 +2594,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 60px;
-    margin-bottom: 400px !important;
+    gap: 60px; 
   }
   
   .vault-image{
@@ -2682,7 +2681,7 @@ body{
     background-color: #010101;
     height: fit-content;
     padding: 0px 144px;
-    margin-bottom: 400px;
+    margin-bottom: 256px;
     position: relative;
   }
 
@@ -2796,7 +2795,7 @@ body{
   /* creators section */
   .creators{
     height: fit-content;
-    margin-bottom: 205px;
+    margin-bottom: 256px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2919,7 +2918,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 56px;
-    margin-bottom: 400px;
+    margin-bottom: 256px;
   }
 
   .community-gainers .section__heading{
@@ -3092,7 +3091,7 @@ body{
     justify-content: center;
     align-items: center;
     gap: 40px;
-    margin-bottom: 400px;
+    margin-bottom: 256px;
     padding: 0px 144px;
   }
 
