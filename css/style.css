@@ -615,6 +615,7 @@ body{
   overflow-y: hidden;
   overflow-x: auto;
   padding: 0px 16px;
+  position: relative;
 }
 
 .creators__info::-webkit-scrollbar{
@@ -728,6 +729,7 @@ body{
   overflow-y: hidden;
   overflow-x: auto;
   padding: 0px 16px;
+  position: relative;
 }
 
 .gains{
@@ -782,6 +784,7 @@ body{
   gap: 16px;
   padding: 5px 0px;
   padding: 0px 16px;
+  position: relative;
 }
 
 .testimony{
@@ -1565,7 +1568,7 @@ body{
   .purple-shadow__round{
     background-color: #A58FFE;
     opacity: 0.7;
-    filter: blur(300px);
+    filter: blur(250px);
     z-index: 0;
     height: 350px;
     width: 350px;
@@ -1703,6 +1706,7 @@ body{
     overflow-y: hidden;
     overflow-x: auto;
     padding: 0px 72px;
+    position: relative;
   }
 
   .creators__info::-webkit-scrollbar{
@@ -1816,6 +1820,7 @@ body{
     overflow-y: hidden;
     overflow-x: auto;
     padding: 0px 72px;
+    position: relative;
   }
 
   .gains{
@@ -1874,6 +1879,7 @@ body{
     overflow-x: auto;
     gap: 24px;
     padding: 0px 72px;
+    position: relative;
   }
 
   .testimony{
@@ -2316,7 +2322,7 @@ body{
     gap: 144px;
     margin-bottom: 0px;
     z-index: 10;
-    margin-bottom: 256px;
+    margin-bottom: 150px;
   }
 
   .header::before{
@@ -2663,7 +2669,7 @@ body{
   .purple-shadow__round{
     background-color: #A58FFE;
     opacity: 0.3;
-    filter: blur(300px);
+    filter: blur(250px);
     z-index: 0;
     height: 600px;
     width: 600px;
@@ -2825,6 +2831,7 @@ body{
     overflow-x: auto;
     user-select: none;
     cursor: pointer;
+    position: relative;
   }
 
   .creators__info::-webkit-scrollbar{
@@ -2937,6 +2944,7 @@ body{
     overflow-y: hidden;
     overflow-x: auto;
     padding: 5px 24px;
+    position: relative;
   }
 
   .gains{
@@ -2993,6 +3001,7 @@ body{
     gap: 24px;
     padding: 5px 24px;
     z-index: 0;
+    position: relative;
   }
   
   .testimony{
@@ -3083,9 +3092,36 @@ body{
     text-transform: capitalize;
   }
 
-  .creators , .testimonials, .community-gainers::before , 
-  .creators , .testimonials, .community-gainers::before{
-    
+  .fixed-shadow{
+    position: absolute;
+    width: calc(100% - 288px);
+    height: 390px;
+    bottom: 10px;
+    margin: 0 auto;
+    left: 144px;
+    overflow: hidden;
+  }
+
+  .fixed-shadow::before{
+    height: 100%;
+    position: absolute;
+    width: 50px;
+    left: 0%;
+    float: left;
+    background: linear-gradient(90deg, #010101 0%, #010101af 50% , #01010105 100%);
+    content: ' ';
+    z-index: 3;
+  }
+
+  .fixed-shadow::after{
+    height: 100%;
+    position: absolute;
+    width: 50px;
+    right: 0%;
+    float: right;
+    background: linear-gradient(90deg, #01010105 0%, #010101e0 50% , #010101  100%);
+    content: ' ';
+    z-index: 3;
   }
 
   /* packages section */
