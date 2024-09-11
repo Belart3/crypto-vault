@@ -43,7 +43,7 @@ body{
   position: relative;
   width: 100%;
   gap: 144px;
-  margin-bottom: 128px;
+  margin-bottom: 56px;
   z-index: 10;
 }
 
@@ -400,6 +400,7 @@ body{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
 }
 
 .vault-image{
@@ -1239,7 +1240,7 @@ body{
     max-height: 750px;
     position: relative;
     width: 100%;
-    margin-bottom: 200px;
+    margin-bottom: 156px;
     z-index: 10;
   }
 
@@ -1532,6 +1533,7 @@ body{
     align-items: center;
     max-width: 880px;
     margin: 0 auto;
+    gap: 24px;
   }
 
   .vault-image{
@@ -2031,6 +2033,7 @@ body{
 
   .packages .button--purple{
     max-width: 177px;
+    margin: 0;
   }
 
   .package__bundle{
@@ -3257,6 +3260,7 @@ body{
 
   .packages .button--purple{
     width: 177px !important;
+    margin: 0;
   }
 
   .alpha-package .button--purple{
@@ -3503,6 +3507,14 @@ body{
     background-color: transparent;
     margin-bottom: 0px;
     z-index: 1;
+  }
+
+  .packages .button--purple{
+    margin: 0 auto;
+  }
+
+  .alpha-package .button--purple{
+    margin: 0;
   }
 
   .alpha-package{
